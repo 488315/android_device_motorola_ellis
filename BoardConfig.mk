@@ -16,6 +16,9 @@ AB_OTA_PARTITIONS += \
     system \
     vbmeta
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
