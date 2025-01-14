@@ -6,6 +6,15 @@
 
 DEVICE_PATH := device/motorola/ellis
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    product \
+    system_ext \
+    vendor \
+    system
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
