@@ -64,6 +64,9 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
+# MediaTek
+BOARD_HAS_MTK_HARDWARE := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
