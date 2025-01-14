@@ -13,7 +13,8 @@ AB_OTA_PARTITIONS += \
     product \
     system_ext \
     vendor \
-    system
+    system \
+    vbmeta
 
 # Architecture
 TARGET_ARCH := arm
@@ -85,6 +86,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
+
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Inherit the proprietary files
 include vendor/motorola/ellis/BoardConfigVendor.mk
