@@ -44,6 +44,7 @@ BOARD_MKBOOTIMG_ARGS += \
 
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
