@@ -131,6 +131,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6765 \
+    fstab.mt6762 \
+    fstab.mt6765.ramdisk \
+    fstab.mt6762.ramdisk
+
+PRODUCT_PACKAGES += \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6765.rc \
+    init.mt6762.rc \
+    init.mt6765.usb.rc \
+    init.project.rc \
+    init.recovery.mt6765.rc \
+    init.sensor_1_0.rc \
+    ueventd.mt6765.rc
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
